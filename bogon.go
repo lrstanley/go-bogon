@@ -2,22 +2,7 @@
 // a "bogon" IP (an internal IP that should not be hitting external services),
 // or a custom specified range of CIDR's.
 //
-// At this time, the following CIDR's are checked per-default:
-//    0.0.0.0/8
-//    10.0.0.0/8
-//    100.64.0.0/10
-//    127.0.0.0/8
-//    169.254.0.0/16
-//    172.16.0.0/12
-//    192.0.0.0/24
-//    192.0.2.0/24
-//    192.168.0.0/16
-//    198.18.0.0/15
-//    198.51.100.0/24
-//    203.0.113.0/24
-//    224.0.0.0/3
-//
-// However, you can use bogon.New() to check your own.
+// Note that you can use bogon.New() to check your own ranges.
 package bogon
 
 import (
@@ -32,6 +17,7 @@ var defaultCIDRs = DefaultRanges()
 // DefaultRanges returns the default list of bogon IP CIDRs.
 func DefaultRanges() []*net.IPNet {
 	out := []*net.IPNet{
+		// IPv4 ranges.
 		MustCIDR("0.0.0.0/8"),
 		MustCIDR("10.0.0.0/8"),
 		MustCIDR("100.64.0.0/10"),
@@ -45,6 +31,31 @@ func DefaultRanges() []*net.IPNet {
 		MustCIDR("198.51.100.0/24"),
 		MustCIDR("203.0.113.0/24"),
 		MustCIDR("224.0.0.0/3"),
+		// IPv6 ranges.
+		// MustCIDR("::/0"),
+		// MustCIDR("::/96"),
+		// MustCIDR("::/128"),
+		// MustCIDR("::1/128"),
+		// MustCIDR("::ffff:0.0.0.0/96"),
+		// MustCIDR("::224.0.0.0/100"),
+		// MustCIDR("::127.0.0.0/104"),
+		// MustCIDR("::0.0.0.0/104"),
+		// MustCIDR("::255.0.0.0/104"),
+		MustCIDR("0000::/8"),
+		MustCIDR("0200::/7"),
+		MustCIDR("3ffe::/16"),
+		MustCIDR("2001:db8::/32"),
+		MustCIDR("2002:e000::/20"),
+		MustCIDR("2002:7f00::/24"),
+		MustCIDR("2002:0000::/24"),
+		MustCIDR("2002:ff00::/24"),
+		MustCIDR("2002:0a00::/24"),
+		MustCIDR("2002:ac10::/28"),
+		MustCIDR("2002:c0a8::/32"),
+		MustCIDR("fc00::/7"),
+		MustCIDR("fe80::/10"),
+		MustCIDR("fec0::/10"),
+		MustCIDR("ff00::/8"),
 	}
 
 	return out
@@ -92,10 +103,6 @@ func (b *Bogon) Is(ip string) (isIn bool, representation string) {
 		return false, ""
 	}
 
-	if ip4 := ipAddress.To4(); ip4 == nil {
-		return false, ""
-	}
-
 	for i := 0; i < len(b.ipRange); i++ {
 		if b.ipRange[i].Contains(ipAddress) {
 			return true, b.ipRange[i].String()
@@ -134,10 +141,6 @@ func New(cidrList []string) (*Bogon, error) {
 func Is(ip string) (isIn bool, representation string) {
 	ipAddress := net.ParseIP(ip)
 	if ipAddress == nil || ipAddress.IsUnspecified() {
-		return false, ""
-	}
-
-	if ip4 := ipAddress.To4(); ip4 == nil {
 		return false, ""
 	}
 
