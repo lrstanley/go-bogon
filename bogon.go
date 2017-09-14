@@ -1,3 +1,7 @@
+// Copyright (c) Liam Stanley <me@liamstanley.io>. All rights reserved. Use
+// of this source code is governed by the MIT license that can be found in
+// the LICENSE file.
+
 // Package bogon provides a simply interface to check if an IP address is
 // a "bogon" IP (an internal IP that should not be hitting external services),
 // or a custom specified range of CIDR's.
