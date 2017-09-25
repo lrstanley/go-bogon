@@ -1,4 +1,4 @@
-# go-bogon [![godoc](https://godoc.org/github.com/lrstanley/go-bogon?status.png)](https://godoc.org/github.com/lrstanley/go-bogon) [![goreport](https://goreportcard.com/badge/github.com/lrstanley/go-bogon)](https://goreportcard.com/report/github.com/lrstanley/go-bogon) [![build](https://travis-ci.org/lrstanley/go-bogon.svg?branch=master)](https://travis-ci.org/lrstanley/go-bogon)
+# go-bogon [![godoc](https://godoc.org/github.com/lrstanley/go-bogon?status.png)](https://godoc.org/github.com/lrstanley/go-bogon) [![goreport](https://goreportcard.com/badge/github.com/lrstanley/go-bogon)](https://goreportcard.com/report/github.com/lrstanley/go-bogon) [![build](https://travis-ci.org/lrstanley/go-bogon.svg?branch=master)](https://travis-ci.org/lrstanley/go-bogon) [![gocover](http://gocover.io/_badge/github.com/lrstanley/go-bogon)](https://gocover.io/github.com/lrstanley/go-bogon)
 
 go-bogon is a basic package to check if an IP is within the bogon IP ranges or not.
 
