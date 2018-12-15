@@ -3,14 +3,14 @@ go:
 - tip
 script:
 - go test -v -timeout 1m -cpu 1,2,4 -count 4
-- go tool vet -v -all .
+- go vet -v .
 branches:
   only:
   - master
 notifications:
   irc:
     channels:
-    - irc.byteirc.org#L
+    - irc.byteirc.org#/dev/null
     template:
     - "%{repository} #%{build_number} %{branch}/%{commit}: %{author} -- %{message}
       %{build_url}"
