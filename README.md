@@ -3,42 +3,42 @@
 <p align="center">go-bogon -- Go package to check if an IP address is a bogon (internal) IP address</p>
 <p align="center">
   <a href="https://github.com/lrstanley/go-bogon/tags">
-    <img alt="Latest Semver Tag" src="https://img.shields.io/github/v/tag/lrstanley/go-bogon?style=flat-square">
+    <img title="Latest Semver Tag" src="https://img.shields.io/github/v/tag/lrstanley/go-bogon?style=flat-square">
   </a>
   <a href="https://github.com/lrstanley/go-bogon/commits/master">
-    <img alt="Last commit" src="https://img.shields.io/github/last-commit/lrstanley/go-bogon?style=flat-square">
+    <img title="Last commit" src="https://img.shields.io/github/last-commit/lrstanley/go-bogon?style=flat-square">
   </a>
 
 
   <a href="https://github.com/lrstanley/go-bogon/actions?query=workflow%3Atest+event%3Apush">
-    <img alt="GitHub Workflow Status (test @ master)" src="https://img.shields.io/github/workflow/status/lrstanley/go-bogon/test/master?label=test&style=flat-square&event=push">
+    <img title="GitHub Workflow Status (test @ master)" src="https://img.shields.io/github/workflow/status/lrstanley/go-bogon/test/master?label=test&style=flat-square&event=push">
   </a>
 
   <a href="https://codecov.io/gh/lrstanley/go-bogon">
-    <img alt="Code Coverage" src="https://img.shields.io/codecov/c/github/lrstanley/go-bogon/master?style=flat-square">
+    <img title="Code Coverage" src="https://img.shields.io/codecov/c/github/lrstanley/go-bogon/master?style=flat-square">
   </a>
 
   <a href="https://pkg.go.dev/github.com/lrstanley/go-bogon">
-    <img alt="Go Documentation" src="https://pkg.go.dev/badge/github.com/lrstanley/go-bogon?style=flat-square">
+    <img title="Go Documentation" src="https://pkg.go.dev/badge/github.com/lrstanley/go-bogon?style=flat-square">
   </a>
   <a href="https://goreportcard.com/report/github.com/lrstanley/go-bogon">
-    <img alt="Go Report Card" src="https://goreportcard.com/badge/github.com/lrstanley/go-bogon?style=flat-square">
+    <img title="Go Report Card" src="https://goreportcard.com/badge/github.com/lrstanley/go-bogon?style=flat-square">
   </a>
 </p>
 <p align="center">
   <a href="https://github.com/lrstanley/go-bogon/issues?q=is:open+is:issue+label:bug">
-    <img alt="Bug reports" src="https://img.shields.io/github/issues/lrstanley/go-bogon/bug?label=issues&style=flat-square">
+    <img title="Bug reports" src="https://img.shields.io/github/issues/lrstanley/go-bogon/bug?label=issues&style=flat-square">
   </a>
   <a href="https://github.com/lrstanley/go-bogon/issues?q=is:open+is:issue+label:enhancement">
-    <img alt="Feature requests" src="https://img.shields.io/github/issues/lrstanley/go-bogon/enhancement?label=feature%20requests&style=flat-square">
+    <img title="Feature requests" src="https://img.shields.io/github/issues/lrstanley/go-bogon/enhancement?label=feature%20requests&style=flat-square">
   </a>
   <a href="https://github.com/lrstanley/go-bogon/pulls">
-    <img alt="Open Pull Requests" src="https://img.shields.io/github/issues-pr/lrstanley/go-bogon?style=flat-square">
+    <img title="Open Pull Requests" src="https://img.shields.io/github/issues-pr/lrstanley/go-bogon?label=prs&style=flat-square">
   </a>
   <a href="https://github.com/lrstanley/go-bogon/discussions/new?category=q-a">
-    <img alt="Ask a Question" src="https://img.shields.io/badge/discussions-ask_a_question!-blue?style=flat-square">
+    <img title="Ask a Question" src="https://img.shields.io/badge/support-ask_a_question!-blue?style=flat-square">
   </a>
-  <a href="https://liam.sh/chat"><img src="https://img.shields.io/badge/discord-bytecord-blue.svg?style=flat-square" alt="Discord Chat"></a>
+  <a href="https://liam.sh/chat"><img src="https://img.shields.io/badge/discord-bytecord-blue.svg?style=flat-square" title="Discord Chat"></a>
 </p>
 <!-- template:end:header -->
 
