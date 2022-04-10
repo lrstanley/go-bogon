@@ -96,11 +96,11 @@ Below are a few guidelines if you would like to contribute:
    * [Code of Conduct][coc].
 
 <!-- definitions -->
-[coc]: https://github.com/lrstanley/go-bogon/blob/master/CODE_OF_CONDUCT.md
+[coc]: https://github.com/lrstanley/go-bogon/blob/master/.github/CODE_OF_CONDUCT.md
 [dco]: https://developercertificate.org/
 [discussions]: https://github.com/lrstanley/go-bogon/discussions
 [issues]: https://github.com/lrstanley/go-bogon/issues/new/choose
 [license]: https://github.com/lrstanley/go-bogon/blob/master/LICENSE
 [pull-requests]: https://github.com/lrstanley/go-bogon/issues/new/choose
 [security]: https://github.com/lrstanley/go-bogon/security/policy
-[support]: https://github.com/lrstanley/go-bogon/blob/master/SUPPORT.md
+[support]: https://github.com/lrstanley/go-bogon/blob/master/.github/SUPPORT.md
