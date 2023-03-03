@@ -101,6 +101,6 @@ Below are a few guidelines if you would like to contribute:
 [discussions]: https://github.com/lrstanley/go-bogon/discussions
 [issues]: https://github.com/lrstanley/go-bogon/issues/new/choose
 [license]: https://github.com/lrstanley/go-bogon/blob/master/LICENSE
-[pull-requests]: https://github.com/lrstanley/go-bogon/issues/new/choose
+[pull-requests]: https://github.com/lrstanley/go-bogon/pulls?q=is%3Aopen+is%3Apr
 [security]: https://github.com/lrstanley/go-bogon/security/policy
 [support]: https://github.com/lrstanley/go-bogon/blob/master/.github/SUPPORT.md
