@@ -2,9 +2,6 @@
 <!-- do not edit anything in this "template" block, its auto-generated -->
 <p align="center">go-bogon -- Go package to check if an IP address is a bogon (internal) IP address</p>
 <p align="center">
-  <a href="https://github.com/lrstanley/go-bogon/tags">
-    <img title="Latest Semver Tag" src="https://img.shields.io/github/v/tag/lrstanley/go-bogon?style=flat-square">
-  </a>
   <a href="https://github.com/lrstanley/go-bogon/commits/master">
     <img title="Last commit" src="https://img.shields.io/github/last-commit/lrstanley/go-bogon?style=flat-square">
   </a>
