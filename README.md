@@ -1,14 +1,18 @@
 <!-- template:begin:header -->
 <!-- do not edit anything in this "template" block, its auto-generated -->
+
 <p align="center">go-bogon -- Go package to check if an IP address is a bogon (internal) IP address</p>
 <p align="center">
+  <a href="https://github.com/lrstanley/go-bogon/tags">
+    <img title="Latest Semver Tag" src="https://img.shields.io/github/v/tag/lrstanley/go-bogon?style=flat-square">
+  </a>
   <a href="https://github.com/lrstanley/go-bogon/commits/master">
     <img title="Last commit" src="https://img.shields.io/github/last-commit/lrstanley/go-bogon?style=flat-square">
   </a>
 
 
   <a href="https://github.com/lrstanley/go-bogon/actions?query=workflow%3Atest+event%3Apush">
-    <img title="GitHub Workflow Status (test @ master)" src="https://img.shields.io/github/workflow/status/lrstanley/go-bogon/test/master?label=test&style=flat-square&event=push">
+    <img title="GitHub Workflow Status (test @ master)" src="https://img.shields.io/github/actions/workflow/status/lrstanley/go-bogon/test.yml?branch=master&label=test&style=flat-square">
   </a>
 
   <a href="https://codecov.io/gh/lrstanley/go-bogon">
@@ -63,7 +67,7 @@ go-bogon is a basic package to check if an IP is within the bogon IP ranges or n
 <!-- template:begin:goget -->
 <!-- do not edit anything in this "template" block, its auto-generated -->
 ```console
-$ go get -u github.com/lrstanley/go-bogon@latest
+go get -u github.com/lrstanley/go-bogon@latest
 ```
 <!-- template:end:goget -->
 
@@ -71,24 +75,24 @@ $ go get -u github.com/lrstanley/go-bogon@latest
 <!-- do not edit anything in this "template" block, its auto-generated -->
 ## :raising_hand_man: Support & Assistance
 
-   * :heart: Please review the [Code of Conduct](.github/CODE_OF_CONDUCT.md) for
+* :heart: Please review the [Code of Conduct](.github/CODE_OF_CONDUCT.md) for
      guidelines on ensuring everyone has the best experience interacting with
      the community.
-   * :raising_hand_man: Take a look at the [support](.github/SUPPORT.md) document on
+* :raising_hand_man: Take a look at the [support](.github/SUPPORT.md) document on
      guidelines for tips on how to ask the right questions.
-   * :lady_beetle: For all features/bugs/issues/questions/etc, [head over here](https://github.com/lrstanley/go-bogon/issues/new/choose).
+* :lady_beetle: For all features/bugs/issues/questions/etc, [head over here](https://github.com/lrstanley/go-bogon/issues/new/choose).
 <!-- template:end:support -->
 
 <!-- template:begin:contributing -->
 <!-- do not edit anything in this "template" block, its auto-generated -->
 ## :handshake: Contributing
 
-   * :heart: Please review the [Code of Conduct](.github/CODE_OF_CONDUCT.md) for guidelines
+* :heart: Please review the [Code of Conduct](.github/CODE_OF_CONDUCT.md) for guidelines
      on ensuring everyone has the best experience interacting with the
-	   community.
-   * :clipboard: Please review the [contributing](.github/CONTRIBUTING.md) doc for submitting
+    community.
+* :clipboard: Please review the [contributing](.github/CONTRIBUTING.md) doc for submitting
      issues/a guide on submitting pull requests and helping out.
-   * :old_key: For anything security related, please review this repositories [security policy](https://github.com/lrstanley/go-bogon/security/policy).
+* :old_key: For anything security related, please review this repositories [security policy](https://github.com/lrstanley/go-bogon/security/policy).
 <!-- template:end:contributing -->
 
 <!-- template:begin:license -->
