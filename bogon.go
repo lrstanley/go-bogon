@@ -1,12 +1,12 @@
-// Copyright (c) Liam Stanley <me@liamstanley.io>. All rights reserved. Use
-// of this source code is governed by the MIT license that can be found in
+// Copyright (c) Liam Stanley <liam@liam.sh>. All rights reserved. Use of
+// this source code is governed by the MIT license that can be found in
 // the LICENSE file.
 
 // Package bogon provides a simply interface to check if an IP address is
 // a "bogon" IP (an internal IP that should not be hitting external services),
 // or a custom specified range of CIDR's.
 //
-// Note that you can use bogon.New() to check your own ranges.
+// Note that you can use [New] to check your own ranges.
 package bogon
 
 import (
@@ -120,7 +120,7 @@ func (b *Bogon) Is(ip string) (isIn bool, representation string) {
 // ranges that you would like to check. An error is returned if a nil list
 // is supplied or if one of the supplied CIDR's is invalid.
 func New(cidrList []string) (*Bogon, error) {
-	if cidrList == nil || len(cidrList) < 1 {
+	if len(cidrList) < 1 {
 		return nil, errors.New("supplied nil cidr ranges")
 	}
 
@@ -128,7 +128,7 @@ func New(cidrList []string) (*Bogon, error) {
 	for i, cidr := range cidrList {
 		_, ipnet, err := net.ParseCIDR(cidr)
 		if err != nil {
-			return nil, fmt.Errorf("unable to convert %s to cidr: %s", cidr, err)
+			return nil, fmt.Errorf("unable to convert %s to cidr: %w", cidr, err)
 		}
 
 		list[i] = ipnet
